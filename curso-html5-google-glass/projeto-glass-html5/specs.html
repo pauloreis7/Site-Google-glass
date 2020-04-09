@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head><title>Tudo sobre Google Glass</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+		<link rel="stylesheet" type="text/css" href="_css/specs.css">
+	</head>
+
+	<script type="text/javascript" language="javascript" src="_javascript/funcoes.js"></script>
+
+	<body>
+	 <div id="interface">
+
+			<header id="cabecalho">
+				<hgroup>
+					<h1>Google Glass</h1>
+					<h2>A revolução do Google está chegando</h2>
+				</hgroup>
+
+					<img id="icone" src="_imagens/especificacoes.png"/>
+
+					<nav id="menu">
+						<h1>Menu Principal</h1>
+						<ul type="disc">
+							<li onmouseover="mudaFoto('home')" onmouseout="mudaFoto('especificacoes')"><a href="index.html">Home</a></li>
+							<li onmouseover="mudaFoto('especificacoes')" onmouseout="mudaFoto('especificacoes')"> <a href="specs.html">Especificações</a></li>
+							<li onmouseover="mudaFoto('fotos')" onmouseout="mudaFoto('especificacoes')"><a href="fotos.html">Fotos</a></li>
+							<li onmouseover="mudaFoto('multimidia')" onmouseout="mudaFoto('especificacoes')"><a href="multimidia.html">Multimídia</a></li>		
+							<li onmouseover="mudaFoto('contato')" onmouseout="mudaFoto('especificacoes')"><a href="fale-conosco.html">Fale conosco</a></li>
+						</ul>
+					</nav>
+			</header>
+
+			<section id="corpo-full">
+				<article id="noticia-principal">
+					<header id="cabecalho-artigo">
+						<hgroup>
+							<h3>Glass > Especificações</h3>
+							<h1>Raio-X no Google Glass</h1>
+							<h2>por Paulo Reis</h2>
+							<h3 class="direita">Atualizado em 01/Maio/2020</h3>
+						</hgroup>
+					</header>
+
+					<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass.Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+					<section id="conteudo">
+						<img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa" />
+						<map name="meumapa">
+							<area shape="poly" coords="184,219,267,208,266,243,186,257" href="google-glass.html#tela" target="janela">
+							<area shape="circle" coords="158,244,11" href="google-glass.html#camera" target="janela">
+							<area shape="circle" coords="77,52,11" href="google-glass.html#gadgets" target="janela">
+							<area shape="poly" coords="28,144,83,218,84,252,26,168" href="google-glass.html#sensores" target="janela">
+						</map>
+						<iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+					</section>
+
+				</article>
+			</section>
+
+			<footer id="rodape">
+				<p>Copyright 2020 - by Paulo Silva dos Reis<br>
+				<a href="https://www.Facebook.com" target="_blank">Facebook</a>|
+				<a href="https://twitter.com" target="_blank">Twitter</a></p>
+
+			</footer>
+		</div>
+	</body>
+</html>

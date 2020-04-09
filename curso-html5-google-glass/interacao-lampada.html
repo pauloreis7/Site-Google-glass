@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head><title>Interação com lâmpada-JS</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			fieldset {
+				width: 250px;
+				height: 300px;
+				margin: auto;
+				padding: 10px;
+				margin-top: 140px;
+			}
+
+			legend {
+				font-size: 20pt;
+				text-align: center;
+				font-family: Arial;
+			}
+
+			 img {
+				position: relative;
+				display: block;
+				margin: auto;
+				margin-top: -15px;
+				width: 200px;
+				height: 280px; 
+			}
+			
+		</style>
+
+		<script type="text/javascript">
+			var quebrada = false;
+
+			function mudaLampada(tipo) {
+
+				if (!quebrada) {
+					document.getElementById("luz").src = "projeto-glass-html5/_imagens/" + tipo + ".jpg";
+
+					if (tipo == 'lampada-quebrada') {
+						quebrada = true;
+					}
+				}
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+		<fieldset><legend>Acenda a lâmpada</legend>
+			<img src="projeto-glass-html5/_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/>
+		</fieldset>
+	</body>
+</html>
